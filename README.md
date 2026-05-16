@@ -6,8 +6,6 @@ Custom WordPress theme for **rentalmobiljogjamudah.com**, a car rental business 
 
 | What | Source |
 |---|---|
-| Layout & structure | [sewamobiljogjaamanda.com](https://sewamobiljogjaamanda.com/) |
-| Color palette (blue) | [sewamobiljogjamudah.com](https://sewamobiljogjamudah.com/) hero section |
 
 ## Features
 
