@@ -333,10 +333,10 @@ button { cursor: pointer; font-family: inherit; }
 
 .hero {
   position: relative;
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
-  padding-block: var(--space-20);
+  padding-block: var(--space-16);
   overflow: hidden;
   color: #fff;
 }
@@ -370,6 +370,7 @@ button { cursor: pointer; font-family: inherit; }
   max-width: 760px;
   margin-inline: auto;
   text-align: center;
+  padding-top: var(--space-12);
 }
 
 .hero-badge {
