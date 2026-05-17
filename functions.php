@@ -277,16 +277,29 @@ function rmjm_customize_register( $wp_customize ) {
 		$priority += 10;
 	}
 
-	// Hero title may contain <span> for the accent-coloured word.
+	// Hero title may contain <br> for line breaks or <span> for accent colour.
 	$wp_customize->add_setting( 'rmjm_hero_title', array(
-		'default'           => '',
+		'default'           => 'Rental Mobil Jogja<br>Terbaik & Terpercaya',
 		'sanitize_callback' => 'wp_kses_post',
 	) );
 	$wp_customize->add_control( 'rmjm_hero_title', array(
-		'label'    => __( 'Hero Title (boleh pakai <span> untuk warna aksen)', 'rmjm' ),
+		'label'    => __( 'Hero Title (boleh pakai <br> untuk baris baru atau <span> untuk warna aksen)', 'rmjm' ),
 		'section'  => 'rmjm_business',
 		'type'     => 'text',
 		'priority' => $priority,
+	) );
+
+	// Google Maps embed src URL for footer map widget.
+	$wp_customize->add_setting( 'rmjm_google_maps_embed', array(
+		'default'           => '',
+		'sanitize_callback' => 'esc_url_raw',
+	) );
+	$wp_customize->add_control( 'rmjm_google_maps_embed', array(
+		'label'       => __( 'Google Maps Embed URL (iframe src)', 'rmjm' ),
+		'description' => __( 'Buka Google Maps → Share → Embed a map → salin URL dari atribut src="…"', 'rmjm' ),
+		'section'     => 'rmjm_business',
+		'type'        => 'text',
+		'priority'    => $priority + 10,
 	) );
 }
 add_action( 'customize_register', 'rmjm_customize_register' );
