@@ -14,42 +14,42 @@
    ============================================================ */
 
 :root {
-  /* --- Primary Blue Palette (from sewamobiljogjamudah.com hero) --- */
-  --color-primary:        #1B4FD8;
-  --color-primary-dark:   #1239A6;
-  --color-primary-darker: #0D2677;
-  --color-primary-light:  #3B6FFF;
-  --color-primary-pale:   #EFF4FF;
+  /* --- Primary Orange/Amber Palette (Amanda-inspired) --- */
+  --color-primary:        #F97316;   /* warm orange — buttons, accents */
+  --color-primary-dark:   #C2410C;   /* deep orange — hover, dark sections */
+  --color-primary-darker: #9A3412;
+  --color-primary-light:  #FB923C;   /* light orange — highlights */
+  --color-primary-pale:   #FFEDD5;   /* very light orange */
 
   /* --- Hero / Dark Sections --- */
-  --color-hero-bg:        #0F2D6B;
-  --color-hero-gradient:  linear-gradient(135deg, #0F2D6B 0%, #1B4FD8 100%);
-  --color-navy:           #0A1F4E;
+  --color-hero-bg:        #1F1410;
+  --color-hero-gradient:  linear-gradient(135deg, #1F1410 0%, #C2410C 60%, #F97316 100%);
+  --color-navy:           #120D0A;
 
   /* --- Accent --- */
-  --color-accent:         #38BDF8;   /* sky blue highlight */
-  --color-accent-dark:    #0EA5E9;
+  --color-accent:         #FBBF24;   /* amber */
+  --color-accent-dark:    #D97706;
   --color-accent-warm:    #F59E0B;   /* amber — use sparingly for badges/prices */
 
   /* --- Neutral / Text --- */
-  --color-text-primary:   #1E293B;
-  --color-text-secondary: #475569;
-  --color-text-muted:     #94A3B8;
+  --color-text-primary:   #1F1410;   /* warm near-black for body text */
+  --color-text-secondary: #78716C;   /* warm gray */
+  --color-text-muted:     #A8A29E;
   --color-text-on-dark:   #FFFFFF;
-  --color-text-on-dark-muted: rgba(255, 255, 255, 0.75);
+  --color-text-on-dark-muted: rgba(255, 255, 255, 0.78);
 
   /* --- Backgrounds --- */
   --color-bg-white:       #FFFFFF;
-  --color-bg-light:       #F8FAFF;   /* very light blue tint */
-  --color-bg-section:     #F0F6FF;   /* section alternating bg */
+  --color-bg-light:       #FFF7ED;   /* very light cream */
+  --color-bg-section:     #FFF1E5;   /* section alternating bg — cream/peach tint */
   --color-bg-card:        #FFFFFF;
 
   /* --- Borders & Shadows --- */
-  --color-border:         #E2E8F0;
-  --color-border-blue:    rgba(27, 79, 216, 0.20);
-  --shadow-card:          0 4px 24px rgba(27, 79, 216, 0.10);
-  --shadow-card-hover:    0 8px 40px rgba(27, 79, 216, 0.20);
-  --shadow-btn:           0 4px 14px rgba(27, 79, 216, 0.35);
+  --color-border:         #F5E6D8;
+  --color-border-blue:    rgba(249, 115, 22, 0.20);
+  --shadow-card:          0 4px 24px rgba(249, 115, 22, 0.12);
+  --shadow-card-hover:    0 8px 40px rgba(249, 115, 22, 0.22);
+  --shadow-btn:           0 4px 14px rgba(249, 115, 22, 0.40);
 
   /* --- Status Colors --- */
   --color-success:        #22C55E;
@@ -226,7 +226,7 @@ button { cursor: pointer; font-family: inherit; }
   background-color: var(--color-primary-dark);
   border-color: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(27, 79, 216, 0.45);
+  box-shadow: 0 6px 20px rgba(249, 115, 22, 0.50);
 }
 
 /* Outline (on light bg) */
@@ -278,7 +278,7 @@ button { cursor: pointer; font-family: inherit; }
   z-index: 100;
   background: var(--color-bg-white);
   border-bottom: 1px solid var(--color-border);
-  box-shadow: 0 2px 12px rgba(27, 79, 216, 0.06);
+  box-shadow: 0 2px 12px rgba(249, 115, 22, 0.08);
 }
 
 .site-header .container {
@@ -344,8 +344,8 @@ button { cursor: pointer; font-family: inherit; }
   content: '';
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle at 20% 50%, rgba(59, 111, 255, 0.3) 0%, transparent 50%),
-                    radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.2) 0%, transparent 40%);
+  background-image: radial-gradient(circle at 20% 50%, rgba(249, 115, 22, 0.25) 0%, transparent 50%),
+                    radial-gradient(circle at 80% 20%, rgba(251, 191, 36, 0.20) 0%, transparent 40%);
   pointer-events: none;
 }
 
@@ -416,7 +416,7 @@ button { cursor: pointer; font-family: inherit; }
 
 .trust-badge .icon {
   width: 20px; height: 20px;
-  background: rgba(56, 189, 248, 0.25);
+  background: rgba(251, 191, 36, 0.25);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   color: var(--color-accent);
@@ -1021,7 +1021,7 @@ button { cursor: pointer; font-family: inherit; }
   background: var(--color-bg-white);
   border-top: 1px solid var(--color-border);
   border-bottom: 1px solid var(--color-border);
-  box-shadow: 0 8px 24px rgba(27, 79, 216, 0.10);
+  box-shadow: 0 8px 24px rgba(249, 115, 22, 0.10);
   z-index: 99;
   padding: var(--space-4) 0;
 }
@@ -1360,7 +1360,7 @@ button { cursor: pointer; font-family: inherit; }
 .comment-form textarea:focus {
   outline: none;
   border-color: var(--color-primary);
-  box-shadow: 0 0 0 3px rgba(27, 79, 216, 0.12);
+  box-shadow: 0 0 0 3px rgba(249, 115, 22, 0.15);
 }
 
 .comment-form textarea {
